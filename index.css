@@ -428,6 +428,65 @@ a {
   z-index: -1;
 }
 
+.why-div::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-color);
+
+  z-index: -1;
+}
+
 .number {
   text-align: center;
+}
+.content-2 img {
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.clean-head {
+  text-align: center;
+}
+.sub {
+  text-align: center;
+}
+.block {
+  width: 140px;
+  background: rgb(40, 207, 152);
+  height: 140px;
+  border-radius: 50%;
+  margin: 1rem 0.7rem;
+}
+.blocks-div h3 {
+  text-align: center;
+}
+.blocks-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.group {
+  display: flex;
+}
+@media (max-width: 499px) {
+  .group {
+    display: block;
+  }
+}
+@media (max-width: 327px) {
+  .group {
+    display: block;
+  }
+  .blocks-div h3 {
+    font-size: 0.8rem;
+  }
+  .block {
+    width: 110px;
+    height: 110px;
+  }
 }
