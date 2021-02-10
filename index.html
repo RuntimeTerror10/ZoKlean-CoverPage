@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css" />
 
@@ -57,10 +63,28 @@
       </div>
     </div>
     <div class="contact-div">
-      <h2 class="number">
+      <h2 class="number" data-aos="fade-right">
         call us at (800) 590-6901 or use the form below to book
       </h2>
-      <h1 class="form">Form here</h1>
+      <div class="form">
+        <input type="text" id="address" placeholder="Address.." />
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Residential</a></li>
+            <li><a class="dropdown-item" href="#">Commercial</a></li>
+          </ul>
+        </div>
+        <button class="submit-btn">Submit</button>
+      </div>
     </div>
     <div class="why-div" data-aos="fade-up-right">
       <h1 class="why-head">Why Zoklean</h1>
@@ -113,142 +137,185 @@
         </div>
       </div>
     </div>
-    <div class="types-div">
-      <h1 class="clean-type" data-aos="fade-right">Cleaning</h1>
-      <h3 class="sub-type" data-aos="fade-right" data-aos-delay="200">
-        Choose from different cleaning type that suit your need.
-      </h3>
-      <div class="type-fig1">
-        <div class="card" data-aos="fade-right">
-          <div class="type-card">
-            <div class="type-head">
-              <h3>Standrad</h3>
-            </div>
-            <div class="type-content">
-              <div class="cont">
-                <p>our basic cleaning to make your place look spotless.</p>
-              </div>
-            </div>
+    <div class="corporate-div">
+      <img src="corp.png" alt="commercial building" class="corp-img" />
+      <h1 class="commercial-head">Commercial Cleaning</h1>
+      <h4 class="sub-comm">
+        We provide many forms of cleanings for various commercial industries.
+      </h4>
+      <div class="blocks-div">
+        <div class="group">
+          <div class="block align" data-aos="fade-up-right">
+            <img src="restraunt.png" alt="" />
+            <h3>Restraunt</h3>
+          </div>
+          <div
+            class="block align"
+            data-aos="fade-up-right"
+            data-aos-delay="150"
+          >
+            <img src="chair.png" alt="" />
+            <h3>Office</h3>
+          </div>
+          <div
+            class="block align"
+            data-aos="fade-up-right"
+            data-aos-delay="300"
+          >
+            <img src="factory.png" alt="" />
+            <h3>Factory</h3>
           </div>
         </div>
-      </div>
-      <div class="card" data-aos="fade-left">
-        <div class="type-card">
-          <div class="type-head">
-            <h3>Deep cleaning</h3>
+        <div class="group">
+          <div
+            class="block align"
+            data-aos="fade-up-right"
+            data-aos-delay="450"
+          >
+            <img src="shop.png" alt="" />
+            <h3>Shop</h3>
           </div>
-          <div class="type-content">
-            <div class="cont">
-              <p>Advanced cleaning for an immaculate and pristine house</p>
-            </div>
+
+          <div
+            class="block align"
+            data-aos="fade-up-right"
+            data-aos-delay="600"
+          >
+            <img src="warehouse.png" alt="" />
+            <h3>Warehouse</h3>
           </div>
-        </div>
-      </div>
-      <div class="card" data-aos="fade-right">
-        <div class="type-card">
-          <div class="type-head">
-            <h3>Move out</h3>
-          </div>
-          <div class="type-content">
-            <div class="cont">
-              <p>
-                Leave behind an ultra-clean house, and get your full deposit
-                back
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card" data-aos="fade-left">
-        <div class="type-card">
-          <div class="type-head">
-            <h3>Move in</h3>
-          </div>
-          <div class="type-content">
-            <div class="cont">
-              <p>Move into a speckless, perfectly clean new house!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="work-div">
-      <h1 class="work-head" data-aos="fade-up">How it works</h1>
-      <h3 class="work-sub" data-aos="fade-up" data-aos-delay="100">
-        Easy to book a clean
-      </h3>
-      <div class="steps-div">
-        <div>
-          <div class="row">
-            <div class="box" data-aos="fade-right">
-              <div class="step-info">
-                <h2>01</h2>
-                <h3 class="step-head">Get the price</h3>
-                <p>
-                  Simply enter your address and get a price quote based on your
-                  property data.
-                </p>
-              </div>
-            </div>
-            <div class="box" data-aos="fade-up">
-              <div class="step-info">
-                <h2>02</h2>
-                <h3 class="step-head">Book the date</h3>
-                <p>
-                  Select the day and time to arrange cleaning with our highly
-                  rated cleaning professional
-                </p>
-              </div>
-            </div>
-            <div class="box" data-aos="fade-left">
-              <div class="step-info">
-                <h2>03</h2>
-                <h3 class="step-head">Trusted and secure</h3>
-                <p>
-                  One of our highly trusted and top rated cleaner will arrive to
-                  clean the premise of your house.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="box" data-aos="fade-right">
-              <div class="box">
-                <div class="step-info">
-                  <h2>04</h2>
-                  <h3 class="step-head">Pay after cleaning</h3>
-                  <p>
-                    Payment is collected only after cleaning is completed. No
-                    subscription or paying in advance
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="box" data-aos="fade-up">
-              <div class="step-info">
-                <h2>05</h2>
-                <h3 class="step-head">Rinse & repeat</h3>
-                <p>
-                  If you like you can also schedule recurring cleanings to keep
-                  your place always looking fresh and clean.
-                </p>
-              </div>
-            </div>
-            <div class="box" data-aos="fade-left">
-              <div class="step-info">
-                <h2>06</h2>
-                <h3 class="step-head">Away from home/office</h3>
-                <p>
-                  Whether it's a doorman, a friend or you chose to leave your
-                  key under the doormat, all we need is the door unlocked
-                </p>
-              </div>
-            </div>
+          <div
+            class="block align"
+            data-aos="fade-up-right"
+            data-aos-delay="750"
+          >
+            <img src="gov.png" alt="" />
+            <h3>Government</h3>
           </div>
         </div>
       </div>
     </div>
+    <h1 class="work-head" data-aos="fade-up">How it works</h1>
+    <h3 class="work-sub" data-aos="fade-up" data-aos-delay="150">
+      Easy to book
+    </h3>
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="container">
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>01</h2>
+            <h3>Step 1</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>02</h2>
+            <h3>Step 2</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>03</h2>
+            <h3>Step 3</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>04</h2>
+            <h3>Step 4</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>05</h2>
+            <h3>Step 5</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>06</h2>
+            <h3>Step 6</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>07</h2>
+            <h3>Step 7</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-in">
+          <div class="content1">
+            <h2>08</h2>
+            <h3>Step 8</h3>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+            <p>Some instructions about the step</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="foot-div">
+        <h1 class="footer-logo">LOGO</h1>
+        <div class="social-div">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="foot-div2">
+        <h2>Company</h2>
+        <h3>Become a contractor</h3>
+        <h3>Book a cleaning</h3>
+      </div>
+      <div class="foot-div3">
+        <h2>Useful links</h2>
+        <h3>FAQ</h3>
+        <h3>Contact</h3>
+      </div>
+    </footer>
     <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6f41a76c28.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

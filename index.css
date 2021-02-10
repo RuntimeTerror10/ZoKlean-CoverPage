@@ -45,6 +45,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 ul {
@@ -189,9 +190,9 @@ a {
 
 .nav__name {
   display: inline-block;
-  color: var(--white-color);
+  color: rgb(40, 207, 152);
   padding: 5px;
-  border: 2px solid white;
+  border: 2px solid rgb(40, 207, 152);
 }
 
 .nav__profesion {
@@ -209,7 +210,7 @@ a {
 }
 
 .nav__link {
-  color: var(--white-color);
+  color: rgb(40, 207, 152);
 }
 
 .nav__social {
@@ -389,7 +390,7 @@ a {
   text-align: center;
 }
 .why-div {
-  margin-top: 100px;
+  margin-top: 160px;
   position: relative;
   padding: 60px;
 }
@@ -460,7 +461,9 @@ a {
   height: 140px;
   border-radius: 50%;
   margin: 1rem 0.7rem;
+  transition: 0.25s ease-in-out;
 }
+
 .blocks-div h3 {
   text-align: center;
 }
@@ -597,66 +600,191 @@ a {
   text-align: center;
 }
 .work-head {
-  display: inline-block;
-  font-size: 2.3rem;
+  display: block;
+  justify-content: center;
+  font-size: 2.4rem;
   padding: 5px;
-  border-bottom: 8px solid var(--dark-color);
+  text-align: center;
+  margin-top: 60px;
 }
+
 /*test*/
-.row {
+.container {
   position: relative;
   width: 90%;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-gap: 0 40px;
-  margin: 0 auto;
-  margin-top: 80px;
 }
-.row .box {
+.container .box {
   position: relative;
-  height: 340px;
+  height: 300px;
   background: #060c21;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #000;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-.step-info {
+.content1 h3 {
+  font-size: 1.8rem;
+}
+
+.content1 {
   position: relative;
   padding: 20px;
 }
-.box .step-info h2 {
+.box .content1 h2 {
   position: absolute;
   top: -60px;
   right: 20px;
   margin: 0;
   padding: 0;
   font-size: 10em;
-  color: rgba(40, 207, 152, 0.3);
+  color: rgb(40, 207, 151, 0.3);
   transition: 0.5s;
 }
-.box :hover.step-info h2 {
+.step-head {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.box :hover.content1 h2 {
   top: -100px;
 }
-.box .step-info h3 {
+.box .content1 h3 {
   margin: 0 0 10px;
   padding: 0;
   font-weight: 500;
   color: #fff;
 }
-.box .step-info p {
+.box .content1 p {
   margin: 0;
   padding: 0;
   font-weight: 500;
   color: #fff;
   font-size: 16px;
 }
-.step-head {
-  font-size: 1.8rem;
-}
-.steps-div {
+.row {
   display: flex;
   justify-content: center;
+}
+
+.work-sub {
+  text-align: center;
+}
+.corporate-div {
+  background: var(--dark-color);
+  margin-top: 100px;
+  padding: 40px;
+  position: relative;
+}
+.corporate-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--dark-color);
+  transform: skewY(3deg);
+  transform-origin: top right;
+  z-index: -2;
+}
+.commercial-head {
+  text-align: center;
+  font-size: 2.3rem;
+  color: var(--white-color);
+}
+.sub-comm {
+  text-align: center;
+  color: var(--white-color);
+}
+.corp-img {
+  display: block;
+  margin: 0 auto;
+}
+.blocks-div img {
+  display: block;
+  margin: 0 auto;
+}
+.align {
+  padding: 15px;
+}
+footer {
+  background: var(--dark-color);
+  margin-top: 80px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-logo {
+  color: rgb(40, 207, 152);
+  padding: 5px;
+  border: 4px solid rgb(40, 207, 152);
+  display: inline-block;
+}
+.social-div {
+  display: flex;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.social-div i {
+  margin: 5px 0.5rem;
+}
+hr {
+  background: white;
+}
+.foot-div2,
+.foot-div3 {
+  color: var(--white-color);
+  text-align: center;
+}
+@media (max-width: 505px) {
+  footer {
+    background: var(--dark-color);
+    margin-top: 80px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form input {
+  width: 400px;
+  min-width: 100px;
+}
+.submit-btn {
+  background: none;
+  border: none;
+  padding: 0 30px;
+  background: var(--dark-color);
+  color: var(--white-color);
+  border-radius: 5px;
+}
+@media (max-width: 585px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+  }
+  .submit-btn {
+    background: none;
+    border: none;
+    padding: 10px 30px;
+    background: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 5px;
+  }
+  .form input {
+    height: 40px;
+    width: 300px;
+  }
 }
