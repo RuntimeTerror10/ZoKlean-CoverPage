@@ -12,7 +12,7 @@ menuBtn.addEventListener("click", function () {
 /*===== MENU SHOW Y HIDDEN =====*/
 const navMenu = document.getElementById("nav-menu"),
   toggleMenu = document.getElementById("nav-toggle"),
-  closeMenu = document.getElementById("nav-close");
+  closeMenu = document.getElementById("nav__close");
 
 /*SHOW*/
 toggleMenu.addEventListener("click", () => {

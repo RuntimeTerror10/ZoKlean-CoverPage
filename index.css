@@ -130,7 +130,7 @@ a {
   transition: 0.25s ease-in-out;
 }
 .menu-burger {
-  transition: 0.2s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 .menu-burger.open .header-toggle {
   transform: translateX(-35px);
@@ -194,7 +194,9 @@ a {
   padding: 5px;
   border: 2px solid rgb(40, 207, 152);
 }
-
+.nav-menu {
+  transition: 0.25s ease-in-out;
+}
 .nav__profesion {
   font-size: var(--small-font-size);
 }
@@ -234,9 +236,9 @@ a {
   color: var(--dark-color);
 }
 
-/*Aparecer menu*/
 .show {
   left: 0;
+  transition: 0.25s ease-in-out;
 }
 
 /*Active menu*/
@@ -250,6 +252,9 @@ a {
   background: rgb(40, 207, 152);
   width: 0;
   transition: 0.3s ease-in-out;
+}
+.nav__link:hover {
+  color: rgb(40, 207, 152);
 }
 .nav__link:hover::after {
   width: 98%;
@@ -274,6 +279,7 @@ a {
     left: 0;
     background: var(--dark-color);
     padding: 15px;
+    transition: 0.25s ease-in-out;
   }
   .nav__content {
     -ms-grid-columns: (max-content) [3];
@@ -440,7 +446,16 @@ a {
 
   z-index: -1;
 }
-
+.nav__close {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.3rem;
+  padding: 0.25rem;
+  background-color: var(--dark-color-alt);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
 .number {
   text-align: center;
 }
@@ -466,6 +481,7 @@ a {
 
 .blocks-div h3 {
   text-align: center;
+  font-size: 1.3rem;
 }
 .blocks-div {
   display: flex;
@@ -788,3 +804,4 @@ hr {
     width: 300px;
   }
 }
+/*asas*/
